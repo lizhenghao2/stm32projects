@@ -1,0 +1,179 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.27.0.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Lea Lea, TJU, LIC=ZB4EI-T9YJ0-RA7DM-X734N-0AQNC-MCDJ8
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.27.0.0
+Toolchain Path:  D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.27.0.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+E:\STM32Projects\CXPI_TEST\MDK-ARM\STM32H733_TEST.uvprojx
+Project File Date:  04/28/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin'
+Build target 'STM32H733_TEST'
+compiling cxpi_driver.c...
+cxpi_driver.c(10): error:  #20: identifier "l_bool" is undefined
+  l_bool l_sys_init (void)
+cxpi_driver.c(12): warning:  #223-D: function "lin_main_init" declared implicitly
+     lin_main_init();
+cxpi_driver.c: 1 warning, 1 error
+compiling cxpi_hal.c...
+cxpi_hal.c(8): error:  #20: identifier "size_t" is undefined
+  static unsigned char GetCRC8_R(const void *buff, size_t size)
+cxpi_hal.c(27): error:  #20: identifier "size_t" is undefined
+  static unsigned short GetCRC16_R(const void *buff, size_t size)
+cxpi_hal.c(61): error:  #20: identifier "l_u8" is undefined
+  void lin_hal_tx_header (l_u8 l_pid) 
+cxpi_hal.c(71): error:  #20: identifier "l_u8" is undefined
+  void j2602_hal_target_reset (l_u8 reset)
+cxpi_hal.c(81): error:  #20: identifier "l_u8" is undefined
+  static void lin_hal_tx_byte (l_u8 lin_hal_bytetoTX)
+cxpi_hal.c(93): error:  #20: identifier "l_u8" is undefined
+  void lin_hal_tx_response (l_u8 l_type, const l_u8 l_data[], l_u8 l_len)
+cxpi_hal.c(93): error:  #20: identifier "l_u8" is undefined
+  void lin_hal_tx_response (l_u8 l_type, const l_u8 l_data[], l_u8 l_len)
+cxpi_hal.c(93): error:  #20: identifier "l_u8" is undefined
+  void lin_hal_tx_response (l_u8 l_type, const l_u8 l_data[], l_u8 l_len)
+cxpi_hal.c(134): error:  #20: identifier "l_u8" is undefined
+  static void lin_hal_tx_checksum (l_u8 checksum)
+cxpi_hal.c(145): error:  #20: identifier "l_u8" is undefined
+  void lin_hal_rx_response (l_u8 l_type, l_u8 l_len)
+cxpi_hal.c(145): error:  #20: identifier "l_u8" is undefined
+  void lin_hal_rx_response (l_u8 l_type, l_u8 l_len)
+cxpi_hal.c(190): warning:  #1-D: last line of file ends without a newline
+  }	
+cxpi_hal.c(8): warning:  #177-D: function "GetCRC8_R"  was declared but never referenced
+  static unsigned char GetCRC8_R(const void *buff, size_t size)
+cxpi_hal.c(27): warning:  #177-D: function "GetCRC16_R"  was declared but never referenced
+  static unsigned short GetCRC16_R(const void *buff, size_t size)
+cxpi_hal.c(81): warning:  #177-D: function "lin_hal_tx_byte"  was declared but never referenced
+  static void lin_hal_tx_byte (l_u8 lin_hal_bytetoTX)
+cxpi_hal.c(103): warning:  #177-D: function "l_hal_tx_state_machine"  was declared but never referenced
+  static void l_hal_tx_state_machine (void)
+cxpi_hal.c(134): warning:  #177-D: function "lin_hal_tx_checksum"  was declared but never referenced
+  static void lin_hal_tx_checksum (l_u8 checksum)
+cxpi_hal.c: 6 warnings, 11 errors
+compiling cxpi_config.c...
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_defs.h(781): error:  #20: identifier "namespace" is undefined
+  _RWSTD_NAMESPACE_BEGIN (__rw)
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_defs.h(781): error:  #65: expected a ";"
+  _RWSTD_NAMESPACE_BEGIN (__rw)
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits(265): error:  #20: identifier "namespace" is undefined
+  _RWSTD_NAMESPACE_BEGIN (std)
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits(265): error:  #65: expected a ";"
+  _RWSTD_NAMESPACE_BEGIN (std)
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits(294): error:  #20: identifier "_TypeT" is undefined
+      static _TypeT min () _THROWS (()) { return 0; }
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits(295): error:  #20: identifier "_TypeT" is undefined
+      static _TypeT max () _THROWS (()) { return 0; }
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits(300): error:  #20: identifier "bool" is undefined
+      _RWSTD_STATIC_CONST (bool, is_signed  = false);
+KB: Unexpected type: 0
+error type>(300): error:  #20: identifier "false" is undefined
+      _RWSTD_STATIC_CONST (bool, is_signed  = false);
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits(301): error:  #20: identifier "bool" is undefined
+      _RWSTD_STATIC_CONST (bool, is_integer = false);
+KB: Unexpected type: 0
+error type>(302): error:  #20: identifier "bool" is undefined
+      _RWSTD_STATIC_CONST (bool, is_exact   = false);
+KB: Unexpected type: 0
+error type>(306): error:  #20: identifier "_TypeT" is undefined
+      static _TypeT epsilon () _THROWS (()) { return 0; }
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits(307): error:  #20: identifier "_TypeT" is undefined
+      static _TypeT round_error () _THROWS (()) { return 0; }
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits(314): error:  #20: identifier "bool" is undefined
+      _RWSTD_STATIC_CONST (bool, has_infinity             = false);
+KB: Unexpected type: 0
+error type>(315): error:  #20: identifier "bool" is undefined
+      _RWSTD_STATIC_CONST (bool, has_quiet_NaN            = false);
+KB: Unexpected type: 0
+error type>(316): error:  #20: identifier "bool" is undefined
+      _RWSTD_STATIC_CONST (bool, has_signaling_NaN        = false);
+KB: Unexpected type: 0
+error type>(317): error:  #20: identifier "float_denorm_style" is undefined
+      _RWSTD_STATIC_CONST (float_denorm_style, has_denorm = denorm_absent);
+KB: Unexpected type: 0
+error type>(317): error:  #20: identifier "denorm_absent" is undefined
+      _RWSTD_STATIC_CONST (float_denorm_style, has_denorm = denorm_absent);
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits(318): error:  #20: identifier "bool" is undefined
+      _RWSTD_STATIC_CONST (bool, has_denorm_loss          = false);
+KB: Unexpected type: 0
+error type>(320): error:  #20: identifier "_TypeT" is undefined
+      static _TypeT infinity () _THROWS (()) { return 0; }
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits(321): error:  #20: identifier "_TypeT" is undefined
+      static _TypeT quiet_NaN () _THROWS (()) { return 0; }
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits(322): error:  #20: identifier "_TypeT" is undefined
+      static _TypeT signaling_NaN () _THROWS (()) { return 0; }
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits(323): error:  #20: identifier "_TypeT" is undefined
+      static _TypeT denorm_min () _THROWS (()) { return 0; }
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits(325): error:  #20: identifier "bool" is undefined
+      _RWSTD_STATIC_CONST (bool, is_iec559        = false);
+KB: Unexpected type: 0
+error type>(326): error:  #20: identifier "bool" is undefined
+      _RWSTD_STATIC_CONST (bool, is_bounded       = false);
+KB: Unexpected type: 0
+error type>(327): error:  #20: identifier "bool" is undefined
+      _RWSTD_STATIC_CONST (bool, is_modulo        = false);
+KB: Unexpected type: 0
+error type>(328): error:  #20: identifier "bool" is undefined
+      _RWSTD_STATIC_CONST (bool, traps            = false);
+KB: Unexpected type: 0
+error type>(329): error:  #20: identifier "bool" is undefined
+      _RWSTD_STATIC_CONST (bool, tinyness_before  = false);
+KB: Unexpected type: 0
+error type>(330): error:  #20: identifier "float_round_style" is undefined
+      _RWSTD_STATIC_CONST (float_round_style, round_style = round_toward_zero);
+KB: Unexpected type: 0
+error type>(330): error:  #20: identifier "round_toward_zero" is undefined
+      _RWSTD_STATIC_CONST (float_round_style, round_style = round_toward_zero);
+D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits(331): error:  #169: expected a declaration
+  };
+cxpi_config.c: 0 warnings, 30 errors
+compiling main.c...
+../Core/Src/main.c(26): error:  #5: cannot open source input file "cxpi_master.c": No such file or directory
+  #include "cxpi_master.c"
+../Core/Src/main.c: 0 warnings, 1 error
+"STM32H733_TEST\STM32H733_TEST.axf" - 43 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32H7xx_DFP.2.7.0.pack
+                Keil.STM32H7xx_DFP.2.7.0
+                STMicroelectronics STM32H7 Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STM32H733_TEST
+  D:\Program Files (x86)\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  D:\Program Files (x86)\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+Target not created.
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>
