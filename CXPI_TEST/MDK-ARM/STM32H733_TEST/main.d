@@ -41,3 +41,17 @@ stm32h733_test\main.o: ../Core/Inc/fdcan.h
 stm32h733_test\main.o: ../Core/Inc/tim.h
 stm32h733_test\main.o: ../Core/Inc/usart.h
 stm32h733_test\main.o: ../Core/Inc/gpio.h
+stm32h733_test\main.o: ..\MDK-ARM\cxpi_master.c
+stm32h733_test\main.o: ..\MDK-ARM\cxpi_hal.c
+stm32h733_test\main.o: ..\MDK-ARM\type.h
+stm32h733_test\main.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\vector
+stm32h733_test\main.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits
+stm32h733_test\main.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_defs.h
+stm32h733_test\main.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_config.h
+stm32h733_test\main.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\rw/config.h
+stm32h733_test\main.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_math.h
+stm32h733_test\main.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\cmath
+stm32h733_test\main.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\cfloat
+stm32h733_test\main.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+stm32h733_test\main.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\climits
+stm32h733_test\main.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h

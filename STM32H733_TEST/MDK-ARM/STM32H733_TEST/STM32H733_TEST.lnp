@@ -1,5 +1,9 @@
 --cpu Cortex-M7.fp.dp
 "stm32h733_test\startup_stm32h733xx.o"
+"stm32h733_test\cxpi_hal.o"
+"stm32h733_test\cxpi_config.o"
+"stm32h733_test\cxpi_master.o"
+"stm32h733_test\cxpi_slave.o"
 "stm32h733_test\main.o"
 "stm32h733_test\gpio.o"
 "stm32h733_test\fdcan.o"

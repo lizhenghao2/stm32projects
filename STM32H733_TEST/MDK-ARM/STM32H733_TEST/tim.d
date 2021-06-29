@@ -38,3 +38,5 @@ stm32h733_test\tim.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h
 stm32h733_test\tim.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
 stm32h733_test\tim.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
 stm32h733_test\tim.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
+stm32h733_test\tim.o: ..\MDK-ARM\type.h
+stm32h733_test\tim.o: ../Core/Inc/usart.h

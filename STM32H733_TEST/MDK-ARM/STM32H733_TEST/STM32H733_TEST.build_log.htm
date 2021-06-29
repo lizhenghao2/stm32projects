@@ -21,13 +21,53 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
 Dialog DLL:      TCM.DLL V1.36.1.0
  
 <h2>Project:</h2>
-E:\Projects\STM32H733_TEST\MDK-ARM\STM32H733_TEST.uvprojx
-Project File Date:  04/09/2021
+E:\STM32Projects\STM32H733_TEST\MDK-ARM\STM32H733_TEST.uvprojx
+Project File Date:  05/11/2021
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin'
 Build target 'STM32H733_TEST'
-"STM32H733_TEST\STM32H733_TEST.axf" - 0 Error(s), 0 Warning(s).
+compiling stm32h7xx_it.c...
+..\MDK-ARM\cxpi_hal.h(5): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/stm32h7xx_it.c: 1 warning, 0 errors
+compiling cxpi_hal.c...
+type.h(142): warning:  #1-D: last line of file ends without a newline
+  #endif
+cxpi_hal.h(5): warning:  #1-D: last line of file ends without a newline
+  #endif
+cxpi_hal.c(161): warning:  #1-D: last line of file ends without a newline
+  }
+cxpi_hal.c(27): warning:  #177-D: function "CXPI_ISR"  was declared but never referenced
+  void CXPI_ISR(void)
+cxpi_hal.c(7): warning:  #177-D: variable "MasterEnabled"  was declared but never referenced
+  static byte MasterEnabled;
+cxpi_hal.c(9): warning:  #550-D: variable "FrameTimeCount"  was set but never used
+  static byte FrameTimeCount;
+cxpi_hal.c(15): warning:  #177-D: variable "FrameIndex"  was declared but never referenced
+  static byte FrameIndex;
+cxpi_hal.c(16): warning:  #177-D: variable "TableTimeCount"  was declared but never referenced
+  static byte TableTimeCount;
+cxpi_hal.c: 8 warnings, 0 errors
+linking...
+STM32H733_TEST\STM32H733_TEST.axf: Error: L6200E: Symbol Cmd_Wakeup_Req multiply defined (by tim.o and cxpi_hal.o).
+STM32H733_TEST\STM32H733_TEST.axf: Error: L6200E: Symbol Ev_Wakeup_ind multiply defined (by tim.o and cxpi_hal.o).
+STM32H733_TEST\STM32H733_TEST.axf: Error: L6200E: Symbol FrameID multiply defined (by tim.o and cxpi_hal.o).
+STM32H733_TEST\STM32H733_TEST.axf: Error: L6200E: Symbol FrameSCT multiply defined (by tim.o and cxpi_hal.o).
+STM32H733_TEST\STM32H733_TEST.axf: Error: L6200E: Symbol Length multiply defined (by tim.o and cxpi_hal.o).
+STM32H733_TEST\STM32H733_TEST.axf: Error: L6200E: Symbol MessageSCT multiply defined (by tim.o and cxpi_hal.o).
+STM32H733_TEST\STM32H733_TEST.axf: Error: L6200E: Symbol MsgID multiply defined (by tim.o and cxpi_hal.o).
+STM32H733_TEST\STM32H733_TEST.axf: Error: L6200E: Symbol Mtype multiply defined (by tim.o and cxpi_hal.o).
+STM32H733_TEST\STM32H733_TEST.axf: Error: L6200E: Symbol NetMngt multiply defined (by tim.o and cxpi_hal.o).
+STM32H733_TEST\STM32H733_TEST.axf: Error: L6200E: Symbol NetMngtInfo multiply defined (by tim.o and cxpi_hal.o).
+STM32H733_TEST\STM32H733_TEST.axf: Error: L6200E: Symbol PDU multiply defined (by tim.o and cxpi_hal.o).
+STM32H733_TEST\STM32H733_TEST.axf: Error: L6200E: Symbol PacketId multiply defined (by tim.o and cxpi_hal.o).
+STM32H733_TEST\STM32H733_TEST.axf: Error: L6200E: Symbol Ptype multiply defined (by tim.o and cxpi_hal.o).
+STM32H733_TEST\STM32H733_TEST.axf: Error: L6200E: Symbol Result multiply defined (by tim.o and cxpi_hal.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 14 error messages.
+"STM32H733_TEST\STM32H733_TEST.axf" - 14 Error(s), 9 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -50,7 +90,8 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.1.2
-Build Time Elapsed:  00:00:01
+Target not created.
+Build Time Elapsed:  00:00:10
 </pre>
 </body>
 </html>

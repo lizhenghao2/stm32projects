@@ -95,24 +95,26 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM3_Init();
   MX_USART10_UART_Init();
+  MX_TIM13_Init();
   /* USER CODE BEGIN 2 */
+	
 	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11, GPIO_PIN_SET);  //使能引脚将CXPI变为Master模式
 	HAL_TIM_Base_Start_IT(&htim2);
 	HAL_TIM_Base_Start_IT(&htim1);
+	__HAL_TIM_CLEAR_IT(&htim13,TIM_IT_UPDATE);//清除定时器初始化中的更新中断标志，避免定时器一启动就进入中断
+	HAL_TIM_Base_Start_IT(&htim13);
 	HAL_GPIO_WritePin((GPIO_TypeDef *)GPIOB, (uint16_t) GPIO_PIN_8,0);
 	//HAL_UART_Receive_IT(&huart3, (uint8_t *)RxBuffer, 8);
 	
-	//HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);
-	//TIM4->CCR2=50; 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		
+		//__HAL_TIM_SET_COUNTER(TIM13, 0);
 		HAL_UART_Transmit(&huart3, TxBuffer, 8, 999);
-		HAL_GPIO_WritePin((GPIO_TypeDef *)GPIOB, (uint16_t) GPIO_PIN_8,1);	
+		HAL_GPIO_TogglePin((GPIO_TypeDef *)GPIOB, (uint16_t) GPIO_PIN_8);	
 		//HAL_GPIO_TogglePin((GPIO_TypeDef *)GPIOB, (uint16_t) GPIO_PIN_2);
 		//HAL_GPIO_TogglePin((GPIO_TypeDef *)GPIOB, (uint16_t) GPIO_PIN_8);
 		//HAL_GPIO_TogglePin((GPIO_TypeDef *)GPIOB, (uint16_t) GPIO_PIN_7);

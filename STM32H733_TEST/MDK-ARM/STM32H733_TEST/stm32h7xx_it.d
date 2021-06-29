@@ -38,3 +38,4 @@ stm32h733_test\stm32h7xx_it.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal
 stm32h733_test\stm32h7xx_it.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
 stm32h733_test\stm32h7xx_it.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
 stm32h733_test\stm32h7xx_it.o: ../Core/Inc/stm32h7xx_it.h
+stm32h733_test\stm32h7xx_it.o: ..\MDK-ARM\cxpi_hal.h
